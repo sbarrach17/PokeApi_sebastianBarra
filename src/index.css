@@ -1,0 +1,83 @@
+body {
+    /* background: silver; */
+    /* background-image: url("src/assets/img/FondoBack.png"); */
+    background: silver;
+    margin: 0;
+    padding: 0;
+}
+/* NAVBAR */
+a {
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    margin-right: 10px;
+}
+.active {
+    color: red;
+    text-decoration: underline;
+}
+.logo {
+    width: 100px;
+}
+/* HOME */
+.fondo {
+    width: 500px;
+}
+
+/* POKEMON PAGE */
+.select-pokemon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-select {
+    width: 200px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+/* CARD */
+.card-content {
+    display: flex;
+    padding-top: 2rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    box-shadow: 0px 0px 2px 1px black;
+    text-shadow: 0px 0px 15px black;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+    border-radius: 10px;
+}
+.card-img-top {
+    border: 5px solid aquamarine;
+    border-radius: 50%;
+    background-color: gray;
+}
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.types {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+.card-title,
+.card-text {
+    transition: color 0.3s ease-in-out;
+}
+
+.card:hover .card-title,
+.card:hover .card-text {
+    color: #ff4500;
+}
